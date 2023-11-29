@@ -1,0 +1,18 @@
+[package]
+name = "commune-proxy"
+description = "A Commune reverse proxy written in Rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alfie John <alfie@rustjobs.com>"]
+
+[[bin]]
+name = "commune-proxy"
+
+[[bin]]
+name = "example-upstream-server"
+
+[dependencies]
+clappers = "3.1.3"
+futures = "0.3.29"
+tokio = { version = "1.34.0", features = ["full"] }
+tokio-tungstenite = "0.20.1"
